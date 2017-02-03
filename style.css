@@ -1,0 +1,171 @@
+body{
+  margin: 0;
+}
+
+*{
+  box-sizing: padding-box;
+}
+/*INDEX1.HTML*/
+section{
+  width: 100%;
+  height: auto;
+  background-image: url(../gallery/street3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+#accueil{
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgba(245, 164, 9, 0.55), rgba(9, 245, 18, 0.55));
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+header nav ul{
+  text-align: right;
+  margin: 0px;
+}
+
+header nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  align-items: right;
+  border-radius: 100%;
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 70px;
+  font-family: 'Sansita', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+a::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgba(9, 245, 18, 1);
+  transform: scaleX(0);
+  transition: all 0.2s ease-in;
+}
+a:hover::after{
+  transform: scaleX(1);
+}
+.left img{
+  width: 250px;
+  background-position: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.left{
+  display: flex;
+  flex-direction: row;
+}
+
+header p{
+  text-align: left;
+  width: 400px;
+  height: 200px;
+  margin-left: 20px;
+  font-size: 35px;
+  color: white;
+  font-family: 'Sansita', sans-serif;
+}
+.block{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.tel{
+  width: 340px;
+  height: 460px;
+  background-image: url(../logo/smartphone.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#app img{
+  width: 130px;
+  height: auto;
+  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/*INDEX2.HTML*/
+#index2 ul{
+  list-style-type: none;
+}
+#index2 ul li{
+  margin-top: 10px;
+}
+#index2 .faq .question{
+  text-align: left;
+  margin-left: 20px;
+  font-size: 30px;
+  color: white;
+  font-family: 'Sansita', sans-serif;
+  text-decoration: underline;
+  transform-style: preserve-3d;
+}
+li .answer{
+  display: none;
+}
+li:target .answer{
+  display: block;
+}
+
+#index2 .faq .answer p{
+  width: 80%;
+  text-align: center;
+  margin-left: 20px;
+  font-size: 24px;
+  color: white;
+  font-family: 'Sansita', sans-serif;
+}
+
+
+
+/*INDEX3.HTML*/
+#index3 h2{
+  font-size: 35px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Sansita', sans-serif;
+  color: white;
+}
+#index3 p{
+  width: 90%;
+  font-size: 20px;
+  font-family: 'Sansita', sans-serif;
+  text-align: center;
+}
+#index3 .contact{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: 'Sansita', sans-serif;
+}
+#index3 .submit{
+  width: ;
+  cursor: pointer;
+  flex-direction: column;
+  align-content: center;
+  color: rgb(79, 242, 46);
+}
+/*#index3 .contact .submit:hover{
+  background-color: rgb(79, 242, 46);
+  transition: 0.2s;
+}*/
